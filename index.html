@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <title>Group Two</title>
+</head>
+<body>
+  <header>
+    <div class="contentWrapper">
+      <a href="./index.html">
+        <h1>TWO</h1>
+      </a>
+
+      <svg id="menuButton" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+        <line x1="4" y1="18" x2="20" y2="18" />
+      </svg>
+
+      <nav id="nav">
+        <a href="#">ABOUT US</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="landingWrapper">
+      <div class="contentWrapper">
+        <section>
+          <h2>We are<br><span>GROUP TWO</span></h2>
+          <p>At GROUP TWO, we aim to provide the utmost in design, interactivity, and user-first focused development.</p>
+          <p>Our mission is to enrich the web environment with the brightest minds in tech today. And with that, we can offer a perspective on the product that few others can.</p>
+          <p>With us, you can rest easy knowing that your business are in good hands. Welcome to GROUP TWO.</p>
+        </section>
+
+        <div>
+          <div id="imageSelector"></div>
+          <div class="playbackControls">
+            <svg id="play" width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M7 4v16l13 -8z" />
+            </svg>
+        
+            <svg id="pause" width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="6" y="5" width="4" height="14" rx="1" />
+              <rect x="14" y="5" width="4" height="14" rx="1" />
+            </svg>
+
+            <svg id="fullscreen" width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <polyline points="16 4 20 4 20 8" />
+              <line x1="14" y1="10" x2="20" y2="4" />
+              <polyline points="8 20 4 20 4 16" />
+              <line x1="4" y1="20" x2="10" y2="14" />
+              <polyline points="16 20 20 20 20 16" />
+              <line x1="14" y1="14" x2="20" y2="20" />
+              <polyline points="8 4 4 4 4 8" />
+              <line x1="4" y1="4" x2="10" y2="10" />
+            </svg>
+          </div>
+
+          <div class="loadingBar">
+            <div id="bar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutWrapper">
+      <div class="contentWrapper">
+        <h2>Meet the team</h2>
+        <div class="employeeWrapper">
+          <article>
+            <img src="images/me.jpg">
+            <h3>Daniel Rosenqvist</h3>
+            <p>CEO, Front-end Development</p>
+            <a href="daniel.html">Go to portfolio</a>
+          </article>
+
+          <article>
+            <img src="images/maria.jpg">
+            <h3>Maria Johansson</h3>
+            <p>COO, Back-end Development</p>
+            <a href="maria.html">Go to portfolio</a>
+          </article>
+
+          <article>
+            <img src="images/wedlund.jpg">
+            <h3>Alexander Wedlund</h3>
+            <p>CTO, Tech Lead</p>
+            <a href="alexander.html">Go to portfolio</a>
+          </article>
+
+          <article>
+            <img src="images/kasper.png">
+            <h3>Michael Young</h3>
+            <p>CFO, Business Relationships</p>
+            <a href="michael.html">Go to portfolio</a>
+          </article>
+
+          <article>
+            <svg width="230" height="230" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+            </svg>
+            <h3>Possibly You</h3>
+            <p>We're hiring!</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolioWrapper">
+      <div class="contentWrapper">
+        <h2>Some of our work</h2>
+        <div id="portfolio"></div>
+
+      </div>
+    </section>
+
+    <section class="contactWrapper">
+      <div class="contentWrapper">
+        <div>
+          <h2>Contact us</h2>
+
+          <form action="" id="form">
+            <input type="text" placeholder="Name" class="inputField" id="name" required>
+            <input type="text" placeholder="Phone" class="inputField" id="phone">
+            <input type="text" placeholder="Email" class="inputField" id="email" required>
+            <textarea placeholder="Your message" class="inputField" id="message" cols="30" rows="5"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+
+        <div>
+          <img src="./images/art.svg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contentWrapper">
+      <div>
+        <a href="#">
+          <svg width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg>
+        </a>
+      </div>
+
+      <div>
+        <p>© GROUP TWO 2021</p>
+      </div>
+
+      <div>
+        <p>070-645 65 565</p>
+        <p>heythere@grouptwo.dev</p>
+        <p>Fantasy St. 32A, Nowhere</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="js/portfolio.js"></script>
+<script src="js/mobileMenu.js"></script>
+<script src="js/imageSlideshow.js"></script>
+<script src="js/fullscreen.js"></script>
+<script src="js/contactForm.js"></script>
+</html>

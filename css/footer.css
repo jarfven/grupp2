@@ -1,0 +1,17 @@
+footer {
+  background: #15202B;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+  footer p {
+    font-weight: 500;
+  }
+
+@media (min-width: 768px) {
+  footer .contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
