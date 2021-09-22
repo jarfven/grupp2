@@ -1,65 +1,23 @@
-.contactWrapper {
-  padding-top: 2rem;
+.contactWrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
 }
 
-  .contactWrapper .contentWrapper {
-    display: flex;
-    gap: 5rem;
-  }
-
-  .contactWrapper h2 {
-    padding-bottom: 2rem;
-    font-size: 2rem;
-  }
-
-    .contactWrapper .contentWrapper div {
-      width: 50%;
-    }
-
-      .contactWrapper .contentWrapper div img {
-        width: 100%;
-      }
-
-  .contactWrapper form {
-    display: flex;
-    flex-direction: column;
-  }
-
-    .contactWrapper input {
-      margin-bottom: 1.5rem;
-      padding: 0.7rem;
-      background: inherit;
-      border: none;
-      border-bottom: 1px solid var(--light-beige);
-      font-size: 1.1rem;
-    }
-
-    .contactWrapper textarea {
-      padding: 0.7rem;
-      border: none;
-      resize: none;
-      background: inherit;
-      border-bottom: 1px solid var(--light-beige);
-      font-size: 1.1rem;
-    }
-
-    .contactWrapper button {
-      width: 130px;
-      height: 44px;
-      margin-top: 1.7rem;
-      border: solid 1px var(--light-beige);
-      border-radius: 0.5rem;
-      font-size: 1.1rem;
-      background: inherit;
-    }
-
-
-@media (max-width: 1100px) {
-  main .contactWrapper .contentWrapper div:nth-child(1) {
-    width: 100%;
+  .contactWrapper input, .contactWrapper textarea {
+    padding: 0.7rem;
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid var(--light-beige);
+    font-size: 1.1rem;
+    resize: none;
   }
   
-  main .contactWrapper .contentWrapper div:nth-child(2) {
-    display: none;
+  .contactWrapper button {
+    height: 44px;
+    border: 1px solid var(--light-beige);
+    font-size: 1.1rem;
+    background: inherit;
   }
-}
