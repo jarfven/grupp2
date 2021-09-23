@@ -1,5 +1,12 @@
 :root {
   --light-beige: #DCC9B6;
+  --light-green: #ABC4AB;
+  --dark-green: #727D71;
+  --dark-blue: #15202B;
+}
+
+html, body {
+  background: var(--dark-green);
 }
 
 section {
@@ -8,6 +15,18 @@ section {
 
 h1, h2, h3, p, a, input, textarea, button, input::placeholder, textarea::placeholder {
   color: var(--light-beige);
+}
+
+section div h2 {
+  font-size: 2rem;
+  padding: 3rem 0;
+  margin: 0;
+}
+
+.employeeWrapper, .portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 4rem;
 }
 
 h1, input, textarea {
