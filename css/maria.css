@@ -7,6 +7,7 @@ coco #6d4c3d  rgba(109, 76, 61, 1)
 
 */
 
+html,
 body {
   background-image: url(/images/SVG/mobilBg.svg);
   background-size: cover;
@@ -39,6 +40,7 @@ h3 {
 
 .imgWrapper {
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .imgWrapper {
@@ -63,8 +65,6 @@ h3 {
   transform: translate(-50%, -1%);
 }
 
-/* Sociala medierknappar */
-
 .socialWrapper {
   width: 100%;
 }
@@ -85,15 +85,32 @@ h3 {
 .bioContainer {
   vertical-align: middle;
   text-align: center;
-  margin-top: 2%;
+  margin-top: 3rem;
   width: 80%;
   padding: 1rem 1.7rem 1rem;
-  background-color: rgba(114, 125, 113, 0.5);
+  background-color: rgba(21, 32, 43, 0.3);
   border-radius: 2rem;
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
   color: #dcc9b6;
 }
+.slideWrapper {
+  display: flex;
+  justify-content: center;
+}
+.slideWrapper {
+  width: 100%;
+  margin-bottom: 3rem;
+}
 
+.slideContainer {
+  margin-top: 3rem;
+}
+
+.slideImg {
+  display: none;
+  height: 12rem;
+  border-radius: 2rem;
+}
 .skillWrapper {
   display: flex;
   justify-content: center;
@@ -108,7 +125,7 @@ h3 {
 .skillContainer {
   width: 32%;
   padding: 0rem 1.7rem 1rem;
-  background-color: rgba(114, 125, 113, 0.5);
+  background-color: rgba(21, 32, 43, 0.3);
   border-radius: 2rem;
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
   margin-right: 1.5%;
@@ -118,7 +135,7 @@ h3 {
 .langContainer {
   width: 32%;
   padding: 0rem 1.7rem 2rem;
-  background-color: rgba(114, 125, 113, 0.5);
+  background-color: rgba(21, 32, 43, 0.3);
   border-radius: 2rem;
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
   margin-bottom: 3rem;
@@ -180,24 +197,6 @@ h3 {
 }
 #finBar {
   width: 75%;
-}
-
-.slideWrapper {
-  display: flex;
-  justify-content: center;
-}
-.slideWrapper {
-  width: 100%;
-}
-
-.slideContainer {
-  margin-top: 2%;
-}
-
-.slideImg {
-  display: none;
-  height: 12rem;
-  border-radius: 2rem;
 }
 
 @media screen and (min-width: 768px) {
