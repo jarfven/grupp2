@@ -38,7 +38,7 @@ const imageCarousel = () => {
   
         slideshowUpdate()
       }
-  
+      
       loadingBar.style.width = `${loadingBarProgress}%`
     }, (10))
   }

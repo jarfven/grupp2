@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/michael.css">
-  <title>Document</title>
+
+  <link rel="stylesheet" href="css/reset.css"> <!-- Gemensam CSS -->
+  <link rel="stylesheet" href="css/globals.css"> <!-- Gemensam CSS -->
+  <link rel="stylesheet" href="css/header.css"> <!-- Gemensam CSS -->
+  <link rel="stylesheet" href="css/alexander.css"> <!-- Personlig CSS -->
+
+  <title>TWO Developer - Alexander</title>
+
 </head>
 <body>
+
+  <header> <!-- Gemensam meny -->
+    <div class="contentWrapper">
+      <a href="./index.html">
+        <h1>TWO</h1>
+      </a>
+      <svg id="menuButton" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+        <line x1="4" y1="18" x2="20" y2="18" />
+      </svg>
+      <nav id="nav">
+        <a href="#">ABOUT US</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">CONTACT</a>
+      </nav>
+    </div>
+  </header> <!-- Slut på gemensam meny -->
+
+  <main>
+    <section id="presentation" class="contentWrapper">
+      <article id="presentationBox">
+        <h1>Alexander Wedlund</h1>
+        <h2>Aspiring Developer</h2>  
+      </article>  
+    </section>
+    <article class="contentWrapper">
+        <h3>Introduction</h3>
+        <p>I am 30 years young and live with my wife Jonna and son Wilmer in Pennybridge. I am a system science student at Pennybridge University and currently work as a developer at TWO because the school forces me to work here. Apart from development, I have a great interest in music and media. I have an almost fully equipped home studio where I produce music and get an outlet for my creativity. My wife usually says that it's my man cave and that's probably true. The strength of being able to produce music and media is that I can, for example, create my own unique sprites and sound effects for web games.</p>
+    </article>
+    <figure id="decorativeLine" class="contentWrapper">
+      <img src="images/alexander/decorativeLine.png">
+    </figure>
+    <section id="skillsWrapper" class="contentWrapper">
+      <section id="codeSkillsBox">
+        <h3>Necessary developing skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>C#</li>
+          <li>UML</li>
+        </ul>
+      </section>
+      <section id="creativeSkillsBox">
+        <h3>Random skills</h3>
+        <ul>
+          <li>I can produce your next gangster rap</li>
+          <li>I can DJ at the business party</li>
+          <li>I have studied the Bible</li>
+          <li>I am a photoshop master</li>
+          <li>I am a premiere pro master</li>
+          <li>I am an after effects master</li>
+          <li>I like to rap</li>
+        </ul>   
+      </section>
+    </section>
+  </main>
   
 </body>
-
-<script src="js/michael.js"></script>
+<script src="js/alexander.js"></script> <!-- Personligt JS -->
 </html>
