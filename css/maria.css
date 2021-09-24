@@ -68,7 +68,7 @@ h3 {
 }
 .socialContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .socialContainer img {
@@ -98,11 +98,8 @@ h3 {
 }
 .slideWrapper {
   width: 100%;
-  margin-bottom: 3rem;
-}
-
-.slideContainer {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .slideImg {
@@ -116,7 +113,7 @@ h3 {
 }
 
 .skillWrapper {
-  margin-top: 2%;
+  margin-top: 3rem;
   width: 100%;
   min-width: 12rem;
 }
@@ -128,7 +125,6 @@ h3 {
   border-radius: 2rem;
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
   margin-right: 1.5%;
-  margin-bottom: 3rem;
 }
 
 .langContainer {
@@ -137,7 +133,6 @@ h3 {
   background-color: rgba(21, 32, 43, 0.3);
   border-radius: 2rem;
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
-  margin-bottom: 3rem;
 }
 
 .skillContainer {

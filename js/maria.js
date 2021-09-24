@@ -1,5 +1,4 @@
 
-
 const images = document.querySelectorAll(".slideImg");
 
     let i = 0;
@@ -20,3 +19,5 @@ const images = document.querySelectorAll(".slideImg");
        i++;
        
       }, 2000);
+
+
