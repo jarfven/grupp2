@@ -27,7 +27,26 @@
   height: 100%;
 }
 
-/* Mobile First Layout */
+li {
+  margin-bottom: 1rem;
+}
+
+progress {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+progress::-webkit-progress-bar {
+  background-color: var(--dark-green);
+  border-radius: 0.5rem;
+}
+progress::-webkit-progress-value {
+  background-color: var(--light-green);
+  animation: flashingBar 1s infinite;
+  border-radius: 0.5rem;
+}
+
 #skillsWrapper {
   margin-top: 1.5rem;
   display: flex;
@@ -46,6 +65,10 @@
 
 /* Desktop  */
 @media (min-width: 768px) {
+  progress {
+    width: 80%;
+  }
+
   #skillsWrapper {
     flex-direction: row;
   }
