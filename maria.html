@@ -1,15 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/maria.css">
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script src="js/maria.js" defer></script>
+
   <title>Document</title>
 </head>
+
 <body>
-  
+  <header>
+    <div class="contentWrapper">
+
+      <a href="./index.html">
+        <h1>TWO</h1>
+      </a>
+
+      <svg id="menuButton" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+        <line x1="4" y1="18" x2="20" y2="18" />
+      </svg>
+
+      <nav id="nav">
+        <a href="#">ABOUT US</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+
+    <div class="imgWrapper">
+        <img src="images/MariaBW.png" alt="bild"/>
+      <h2>Maria Järventaus Johansson</h2>
+    </div>
+ 
+    <div class="socialWrapper">
+      <div class="socialContainer">
+       <a href="https://www.instagram.com/" target="_blank"><img src="Images/SVG/instagram.svg"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="Images/SVG/facebook.svg"></a>
+        <a href="https://github.com/" target="_blank"><img src="Images/SVG/github.svg"></a>
+        <a href="https://www.linkedin.com/" target="_blank"> <img src="Images/SVG/linkedin.svg"></a>
+      </div>  
+    </div>
+
+
+    <div class="bioWrapper">
+      <div class="bioContainer">
+        <p>Did you know the average person decides within two seconds
+          of looking at a company website whether they like it or not?
+          It may seem minor, but a poorly designed website can damage your brand
+          and cost you customers, not to mention time and money of a re-brand.
+          Having worked for over 7 years as a professional web designer
+          specializing in brand identification,
+          I’ve built my reputation on the longevity of my web designs.</p>
+      </div>
+    </div>
+
+    <div class = "slideWrapper">
+        <div class="slideContainer">
+          <img class="slideImg" src="images/maria slides/bild1.jpg">
+          <img class="slideImg" src="images/maria slides/bild2.jpg">
+          <img class="slideImg" src="images/maria slides/bild3.jpg">
+        </div>
+    </div>
+
+    <div class="skillWrapper">
+      <div class="skillContainer">
+        <h3>Skills </h3>
+
+        <div class="skills">
+          <div class="details">
+            <p>Java</p>
+            <p class="percent">90%</p>
+          </div>
+          <div class="bar">
+            <div id="javaBar"></div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="details">
+            <p>Illustrator</p>
+            <p class="percent">95%</p>
+          </div>
+          <div class="bar">
+            <div id="illBar"></div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="details">
+            <p>Html</p>
+            <p class="percent">80%</p>
+          </div>
+          <div class="bar">
+            <div id="htmlBar"></div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="details">
+            <p>JavaScript</p>
+            <p class="percent">70%</p>
+          </div>
+          <div class="bar">
+            <div id="jsBar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="langContainer">
+        <h3>Languages </h3>
+
+        <div class="skills">
+          <div class="details">
+            <p>Swedish</p>
+            <p class="percent">100%</p>
+          </div>
+          <div class="bar">
+            <div id="sweBar"></div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="details">
+            <p>English</p>
+            <p class="percent">95%</p>
+          </div>
+          <div class="bar">
+            <div id="engBar"></div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="details">
+            <p>Korean</p>
+            <p class="percent">70%</p>
+          </div>
+          <div class="bar">
+            <div id="korBar"></div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="details">
+            <p>Finish</p>
+            <p class="percent">75%</p>
+          </div>
+          <div class="bar">
+            <div id="finBar"></div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </main>
+
 </body>
 
-<script src="js/maria.js"></script>
+
+
+
+
 </html>
