@@ -26,3 +26,37 @@
   width: 100%;
   height: 100%;
 }
+
+/* Mobile First Layout */
+#skillsWrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#codeSkillsBox {
+  width: 100%;
+  height: auto;
+}
+
+#creativeSkillsBox {
+  width: 100%;
+  height: auto;
+}
+
+/* Desktop  */
+@media (min-width: 768px) {
+  #skillsWrapper {
+    flex-direction: row;
+  }
+
+  #codeSkillsBox {
+    width: 49%;
+    height: auto;
+  }
+
+  #creativeSkillsBox {
+    width: 49%;
+    height: auto;
+  }
+}
