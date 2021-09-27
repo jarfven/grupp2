@@ -9,7 +9,7 @@
       100%,
     linear-gradient(to right, var(--header-green), var(--header-green));
   background-size: 45%;
-  border: 0.25rem solid var(--light-beige);
+  /*   border: 0.25rem solid var(--light-beige); */
   border-radius: 0.5rem;
 }
 
