@@ -6,9 +6,9 @@
   padding-top: 3rem;
   height: 25rem;
   background: url("../images/alexander/alexanderHeaderImage.png") no-repeat 15%
-      0%,
+      100%,
     linear-gradient(to right, var(--header-green), var(--header-green));
-  background-size: 35%;
+  background-size: 45%;
   border: 0.25rem solid var(--light-beige);
   border-radius: 0.5rem;
 }
@@ -76,7 +76,17 @@ progress::-webkit-progress-value {
   filter: grayscale();
 }
 
-/* Desktop  */
+/* "Mellanskärm" */
+@media (min-width: 500px) {
+  #presentation {
+    background: url("../images/alexander/alexanderHeaderImage.png") no-repeat
+        15% 25%,
+      linear-gradient(to right, var(--header-green), var(--header-green));
+    background-size: 35%;
+  }
+}
+
+/* Dator  */
 @media (min-width: 768px) {
   #presentation {
     background: url("../images/alexander/alexanderHeaderImage.png") no-repeat
@@ -104,7 +114,7 @@ progress::-webkit-progress-value {
   }
 }
 
-/* Desktop Header Improvement */
+/* Dator Header Förbättring */
 @media (min-width: 1150px) {
   #presentation {
     background: url("../images/alexander/alexanderHeaderImage.png") no-repeat
