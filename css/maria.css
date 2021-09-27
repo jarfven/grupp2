@@ -46,6 +46,7 @@ h3 {
 .imgWrapper {
   position: relative;
   text-align: center;
+  opacity: 0;
 }
 
 .imgWrapper img {
@@ -65,6 +66,7 @@ h3 {
 
 .socialWrapper {
   width: 100%;
+  opacity: 0;
 }
 .socialContainer {
   display: flex;
@@ -79,6 +81,7 @@ h3 {
 .bioWrapper {
   display: flex;
   justify-content: center;
+  opacity: 0;
 }
 
 .bioContainer {
@@ -116,6 +119,7 @@ h3 {
   margin-top: 3rem;
   width: 100%;
   min-width: 12rem;
+  opacity: 0;
 }
 
 .skillContainer {
@@ -154,13 +158,13 @@ h3 {
   justify-content: space-between;
   margin-top: 0.1rem;
 }
-.bar {
+.barBg {
   margin-top: -0.7rem;
   position: relative;
   background-color: #15202b;
   border-radius: 2rem;
 }
-.bar div {
+.bar {
   position: relative;
   width: 0%;
   height: 0.3rem;
