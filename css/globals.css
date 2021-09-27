@@ -2,6 +2,7 @@
   --light-beige: #dcc9b6;
   --light-green: #abc4ab;
   --dark-green: #727d71;
+  --header-green: #56605c;
   --dark-blue: #15202b;
 }
 
@@ -17,6 +18,7 @@ section {
 h1,
 h2,
 h3,
+h4,
 p,
 a,
 ul,
@@ -64,6 +66,7 @@ p {
 h1,
 h2,
 h3,
+h4,
 p,
 a,
 ul,

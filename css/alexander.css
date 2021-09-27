@@ -5,8 +5,10 @@
   text-align: center;
   padding-top: 3rem;
   height: 25rem;
-  background: url("../images/alexander/alexander.jpg") no-repeat 25% 25%;
-  background-size: cover;
+  background: url("../images/alexander/alexanderHeaderImage.png") no-repeat 15%
+      0%,
+    linear-gradient(to right, var(--header-green), var(--header-green));
+  background-size: 35%;
   border: 0.25rem solid var(--light-beige);
   border-radius: 0.5rem;
 }
@@ -63,8 +65,26 @@ progress::-webkit-progress-value {
   height: auto;
 }
 
+#slideShowContainer {
+  margin-left: auto;
+  width: 100%;
+  height: 20rem;
+}
+
+#slideShow {
+  width: 100%;
+  filter: grayscale();
+}
+
 /* Desktop  */
 @media (min-width: 768px) {
+  #presentation {
+    background: url("../images/alexander/alexanderHeaderImage.png") no-repeat
+        25% 0%,
+      linear-gradient(to right, var(--header-green), var(--header-green));
+    background-size: 25%;
+  }
+
   progress {
     width: 80%;
   }
@@ -81,5 +101,15 @@ progress::-webkit-progress-value {
   #creativeSkillsBox {
     width: 49%;
     height: auto;
+  }
+}
+
+/* Desktop Header Improvement */
+@media (min-width: 1150px) {
+  #presentation {
+    background: url("../images/alexander/alexanderHeaderImage.png") no-repeat
+        35% 0%,
+      linear-gradient(to right, var(--header-green), var(--header-green));
+    background-size: 18%;
   }
 }

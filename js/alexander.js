@@ -1,9 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
   //Invänta HTML.
 
+  //Animationer!
+  window.onload = function () {
+    startFadeAnimation();
+    startSlideShow();
+    startSkillsAnimation();
+  };
+
   //Variabler till nedan
   let opacityIntervalId = NaN; //Animation
   let skillIntervalId = NaN; //Animation
+  let slideIntervalId = NaN; //Animation
+
+  let i = 0;
+  let images = [];
+  images[0] = "../images/alexander/slide1.jpg";
+  images[1] = "../images/alexander/slide2.jpg";
+  images[2] = "../images/alexander/slide3.jpg";
+  let caption = document.getElementById("captionText");
+  let description = document.getElementById("projectDesc");
+
   let currentHtmlSkill = Number(
     document.getElementById("htmlSkill").getAttribute("value")
   );
@@ -26,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("umlSkill").getAttribute("value")
   );
 
+  const slideImage = document.getElementById("slideShow");
   const htmlSkill = document.getElementById("htmlSkill");
   const cssSkill = document.getElementById("cssSkill");
   const jsSkill = document.getElementById("jsSkill");
@@ -43,10 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
     csharp: 55,
     uml: 40,
   };
-
-  //Animera!
-  startFadeAnimation();
-  startSkillsAnimation();
 
   //Animering av presentationsrutan
   function startFadeAnimation() {
@@ -97,4 +111,38 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   //SLUT på animering av skills
+
+  //Slideshow
+  function startSlideShow() {
+    slideIntervalId = setInterval(setNewImage, 3000);
+  }
+
+  //Ska refaktorisera denna sedan om jag hinner.
+  function setNewImage() {
+    slideImage.src = images[i];
+    if (i <= images.length - 1) {
+      switch (i) {
+        case 0:
+          caption.textContent = "Waving bear project";
+          description.textContent =
+            "Artificial bear waving (Machine Code only).";
+          break;
+        case 1:
+          caption.textContent = "Praying bear project";
+          description.textContent =
+            "Robot bear praying for all the Java Developers (Python project).";
+          break;
+        case 2:
+          caption.textContent = "Fighting bear project";
+          description.textContent = "Fighting game project (C# / Unity).";
+          i = -1;
+          break;
+        default:
+          console.log("No case");
+      }
+      i++;
+    } else {
+      i = 0;
+    }
+  }
 });
