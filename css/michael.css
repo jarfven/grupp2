@@ -1,0 +1,28 @@
+.landingWrapper .contentWrapper article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landingWrapper .contentWrapper article > img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+
+
+.opacity-animation > div {
+  background: var(--dark-blue);
+}
+
+.opacity-animation div div {
+  background: var(--light-green);
+}
+
+
+/* Progress bars */
+.progress-container,.bar {padding:0.01em 16px} .bar {margin-top:16px;margin-bottom:16px}
+.edge-rounding {border-radius:16px}
+
+/* Animation */
+.opacity-animation {animation:opac 2s} @keyframes opac{ from {opacity:0} to {opacity:1}}

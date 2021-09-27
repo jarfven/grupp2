@@ -1,6 +1,5 @@
 .aboutWrapper {
   padding-top: 3rem;
-  background: var(--dark-blue);
 }
 
   .aboutWrapper .contentWrapper {
@@ -44,7 +43,7 @@
       width: 0%;
       height: 100%;
       border-radius: 1.2rem;
-      background: var(--light-beige);
+      background: var(--light-green);
     }
 
 @media (min-width: 890px) {

@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Animering av skills
   function startSkillsAnimation() {
-    skillIntervalId = setInterval(increaseValues, 25);
+    skillIntervalId = setInterval(increaseValues, 15);
   }
   function increaseValues() {
     if (currentHtmlSkill < skillSet.html) {
@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Slideshow
   function startSlideShow() {
+    slideImage.src = images[0];
     slideIntervalId = setInterval(setNewImage, 3000);
   }
 
