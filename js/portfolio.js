@@ -1,5 +1,5 @@
 const portfolio = () => {
-  const output = document.querySelector('#portfolio')
+  const output = document.querySelector('#portfolioEntryPoint')
 
   fetch('../project.xml')
     .then(response => response.text())

@@ -4,6 +4,10 @@ const mobileMenu = () => {
   const menuButtonSvg = '<path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="4" y1="6" x2="20" y2="6" /><line x1="4" y1="12" x2="20" y2="12" /><line x1="4" y1="18" x2="20" y2="18" />'
   const closeMenuSvg = '<path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />'
 
+  const about = document.querySelector('#about')
+  const portfolio = document.querySelector('#portfolio')
+  const contact = document.querySelector('#contact')
+
   let menuToggle = false
   let opacity = 0
 
@@ -60,6 +64,66 @@ const mobileMenu = () => {
 
   window.addEventListener('resize', handleResize)
   menuButton.addEventListener('click', openMenu)
+
+  about.addEventListener('click', () => {
+    if (window.innerWidth >= 768) return false
+
+    menuToggle = false
+      menuButton.style.position = 'initial'
+      menuButton.style.right = 'initial'
+      menuButton.innerHTML = menuButtonSvg
+
+      const fadeOut = setInterval(() => {
+        nav.style.opacity = opacity
+        opacity = opacity - 0.01
+        if (opacity <= 0) {
+          opacity = 0
+          clearInterval(fadeOut)
+          nav.style.display = 'none'
+          return false
+        }
+      }, 10)
+  })
+
+  portfolio.addEventListener('click', () => {
+    if (window.innerWidth >= 768) return false
+
+    menuToggle = false
+      menuButton.style.position = 'initial'
+      menuButton.style.right = 'initial'
+      menuButton.innerHTML = menuButtonSvg
+
+      const fadeOut = setInterval(() => {
+        nav.style.opacity = opacity
+        opacity = opacity - 0.01
+        if (opacity <= 0) {
+          opacity = 0
+          clearInterval(fadeOut)
+          nav.style.display = 'none'
+          return false
+        }
+      }, 10)
+  })
+
+  contact.addEventListener('click', () => {
+    if (window.innerWidth >= 768) return false
+
+    menuToggle = false
+      menuButton.style.position = 'initial'
+      menuButton.style.right = 'initial'
+      menuButton.innerHTML = menuButtonSvg
+
+      const fadeOut = setInterval(() => {
+        nav.style.opacity = opacity
+        opacity = opacity - 0.01
+        if (opacity <= 0) {
+          opacity = 0
+          clearInterval(fadeOut)
+          nav.style.display = 'none'
+          return false
+        }
+      }, 10)
+  })
 }
 
 mobileMenu()

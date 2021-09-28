@@ -28,9 +28,9 @@
       </svg>
 
       <nav id="nav">
-        <a href="#">ABOUT US</a>
-        <a href="#">PORTFOLIO</a>
-        <a href="#">CONTACT</a>
+        <a href="#aboutAnchor" id="about">ABOUT US</a>
+        <a href="#portfolioAnchor" id="portfolio">PORTFOLIO</a>
+        <a href="#contactAnchor" id="contact">CONTACT</a>
       </nav>
     </div>
   </header>
@@ -79,9 +79,9 @@
       </div>
     </section>
 
-    <section class="aboutWrapper">
+    <section class="aboutWrapper" id="aboutWrapper">
       <div class="contentWrapper">
-        <h2>Meet the team</h2>
+        <h2 id="aboutAnchor">Meet the team</h2>
         <div class="employeeWrapper">
           <article>
             <img src="images/daniel.jpg" alt="Employee Daniel">
@@ -124,23 +124,54 @@
       </div>
     </section>
 
-    <section class="portfolioWrapper">
+    <section class="portfolioWrapper" id="portfolioWrapper">
       <div class="contentWrapper">
-        <h2>Some of our work</h2>
-        <div id="portfolio" class="portfolio"></div>
+        <h2 id="portfolioAnchor">Some of our work</h2>
+        <div id="portfolioEntryPoint" class="portfolio"></div>
 
       </div>
     </section>
 
-    <section class="contactWrapper">
+    <section class="contactWrapper" id="contactWrapper">
       <div class="contentWrapper">
-        <h2>Contact us</h2>
+        <h2 id=contactAnchor>Contact us</h2>
         
         <form action="#" id="form">
-          <input type="text" placeholder="Name" class="inputField" id="name" required>
-          <input type="text" placeholder="Phone" class="inputField" id="phone">
-          <input type="text" placeholder="Email" class="inputField" id="email" required>
-          <textarea placeholder="Your message" class="inputField" id="message" cols="30" rows="5"></textarea>
+          <div class="verification">
+            <input type="text" placeholder="Name" class="inputField" id="name" required>
+            <svg id="nameVerification" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </div>
+
+          <div class="verification">
+            <input type="text" placeholder="Phone  ex. 070-67575675" class="inputField" id="phone">
+            <svg id="phoneVerification" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </div>
+
+          <div class="verification">
+            <input type="text" placeholder="Email" class="inputField" id="email" required>
+            <svg id="emailVerification" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </div>
+
+          <div class="verification">
+            <textarea placeholder="Your message" class="inputField" id="message" cols="30" rows="5"></textarea>
+            <svg id="messageVerification" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </div>
           <button type="submit">Send</button>
         </form>
       </div>
