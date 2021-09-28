@@ -20,6 +20,11 @@
   border-radius: 0.5rem;
 }
 
+  #presentationBox h2:first-child {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
 #decorativeLine {
   height: 1rem;
 }
@@ -39,10 +44,12 @@ progress {
   height: 2rem;
   box-shadow: 0.063rem 0.063rem 0.25rem rgba(0, 0, 0, 0.2); /* Vid sådana här syften är PX smidigt och gör inte sidan mindre responsiv men kör detta nu enligt uppgiften */
 }
+
 progress::-webkit-progress-bar {
   background-color: var(--dark-blue);
   border-radius: 0.5rem;
 }
+
 progress::-webkit-progress-value {
   background-color: var(--light-green);
   border-radius: 0.5rem;
@@ -57,6 +64,7 @@ progress::-webkit-progress-value {
 #codeSkillsBox {
   width: 100%;
   height: auto;
+  margin-bottom: 3rem;
 }
 
 #creativeSkillsBox {
@@ -72,7 +80,7 @@ progress::-webkit-progress-value {
 
 #slideShow {
   width: 100%;
-  filter: grayscale();
+  filter: grayscale(100);
 }
 
 /* "Mellanskärm" */
