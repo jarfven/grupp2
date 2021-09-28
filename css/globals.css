@@ -9,6 +9,12 @@
 html,
 body {
   background: var(--dark-green);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 section {
