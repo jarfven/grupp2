@@ -5,11 +5,11 @@
   background-size: cover;
 }
 
-  .landingWrapper .contentWrapper section {
+  .textWrapper {
     max-width: 900px;
   }
 
-  .landingWrapper .contentWrapper > div {
+  .slideshowWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;

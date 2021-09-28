@@ -16,7 +16,7 @@
     }
 
     .employeeWrapper article svg {
-      border: 3px solid var(--dark-blue);
+      border: 0.2rem solid var(--dark-blue);
       border-radius: 15rem;
     }
     

@@ -10,14 +10,14 @@
     padding: 0.7rem;
     background: inherit;
     border: none;
-    border-bottom: 1px solid var(--light-beige);
+    border-bottom: 0.1rem solid var(--light-beige);
     font-size: 1.1rem;
     resize: none;
   }
   
   .contactWrapper button {
-    height: 44px;
-    border: 1px solid var(--light-beige);
+    height: 3rem;
+    border: 0.1rem solid var(--light-beige);
     font-size: 1.1rem;
     background: inherit;
   }

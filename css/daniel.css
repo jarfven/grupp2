@@ -15,13 +15,7 @@
     border-radius: 15rem;
   }
 
-@media (min-width: 890px) {
-  main .aboutWrapper .contentWrapper {
-    flex-direction: row;
-  }
-}
-
-
+  
 .skillsWrapper {
   padding-top: 3rem;
 }
@@ -50,6 +44,10 @@
   main .skillsWrapper .container {
     flex-direction: row;
     gap: 4rem;
+  }
+
+  main .aboutWrapper .contentWrapper {
+    flex-direction: row;
   }
 
   .info, .skills {

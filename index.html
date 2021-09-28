@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/globals.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/landing.css">
@@ -39,14 +38,14 @@
   <main>
     <section class="landingWrapper">
       <div class="contentWrapper">
-        <section>
+        <div class="textWrapper">
           <h2>We are<br><span>GROUP TWO</span></h2>
           <p>At GROUP TWO, we aim to provide the utmost in design, interactivity, and user-first focused development.</p>
           <p>Our mission is to enrich the web environment with the brightest minds in tech today. And with that, we can offer a perspective on the product that few others can.</p>
           <p>With us, you can rest easy knowing that your business are in good hands. Welcome to GROUP TWO.</p>
-        </section>
+        </div>
 
-        <div>
+        <div class="slideshowWrapper">
           <div id="imageSelector"></div>
           <div class="playbackControls">
             <svg id="play" width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DCC9B6" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -85,28 +84,28 @@
         <h2>Meet the team</h2>
         <div class="employeeWrapper">
           <article>
-            <img src="images/daniel.jpg">
+            <img src="images/daniel.jpg" alt="Employee Daniel">
             <h3>Daniel Rosenqvist</h3>
             <p>CEO, Front-end Development</p>
             <a href="daniel.html">Go to portfolio</a>
           </article>
 
           <article>
-            <img src="images/maria.jpg">
+            <img src="images/maria.jpg" alt="Employee Maria">
             <h3>Maria Johansson</h3>
             <p>COO, Back-end Development</p>
             <a href="maria.html">Go to portfolio</a>
           </article>
 
           <article>
-            <img src="images/wedlund.jpg">
+            <img src="images/wedlund.jpg" alt="Employee Alex">
             <h3>Alexander Wedlund</h3>
             <p>CTO, Tech Lead</p>
             <a href="alexander.html">Go to portfolio</a>
           </article>
 
           <article>
-            <img src="images/kasper.png">
+            <img src="images/kasper.png" alt="Employee Michael">
             <h3>Michael Young</h3>
             <p>CFO, Business Relationships</p>
             <a href="michael.html">Go to portfolio</a>
@@ -137,7 +136,7 @@
       <div class="contentWrapper">
         <h2>Contact us</h2>
         
-        <form action="" id="form">
+        <form action="#" id="form">
           <input type="text" placeholder="Name" class="inputField" id="name" required>
           <input type="text" placeholder="Phone" class="inputField" id="phone">
           <input type="text" placeholder="Email" class="inputField" id="email" required>
@@ -186,11 +185,11 @@
       </div>
     </div>
   </footer>
-</body>
 
-<script src="js/portfolio.js"></script>
-<script src="js/mobileMenu.js"></script>
-<script src="js/imageSlideshow.js"></script>
-<script src="js/fullscreen.js"></script>
-<script src="js/contactForm.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/mobileMenu.js"></script>
+  <script src="js/imageSlideshow.js"></script>
+  <script src="js/fullscreen.js"></script>
+  <script src="js/contactForm.js"></script>
+</body>
 </html>

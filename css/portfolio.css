@@ -5,7 +5,7 @@
   .portfolioWrapper div article {
     display: flex;
     flex-direction: column;
-    border: 2px solid #dcc9b66b;
+    border: 0.1rem solid #dcc9b66b;
   }
 
     .portfolioWrapper div article div {
