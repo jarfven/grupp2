@@ -56,7 +56,7 @@ const contactForm = () => {
     }
   }
 
-  const validatemMessage = (message) => {
+  const validateMessage = (message) => {
     if (!/^ *$/.test(message.target.value)) {
       messageVerfication.innerHTML = checkbox
       messageRegexTest = true
@@ -83,7 +83,7 @@ const contactForm = () => {
   const submitForm = (e) => {
     e.preventDefault()
 
-    if (nameRegexTest && phoneRegexTest && emailRegexTest && messageRegexTest) return false
+    if (!nameRegexTest || !phoneRegexTest || !emailRegexTest || !messageRegexTest) return false
 
     alert(`Thank you for your message, ${name.value}! We will get back to you as soon as possible.`)
     localStorage.removeItem('user')
@@ -93,7 +93,7 @@ const contactForm = () => {
   name.addEventListener('keyup', validateName)
   phone.addEventListener('keyup', validatePhone)
   email.addEventListener('keyup', validateEmail)
-  message.addEventListener('keyup', validatemMessage)
+  message.addEventListener('keyup', validateMessage)
   form.addEventListener('submit', submitForm)
 }
 
