@@ -1,50 +1,22 @@
 //Delays för när fadein ska ske
-setTimeout(fadeInImg, 100);
-setTimeout(fadeInSocial, 300);
-setTimeout(fadeInBio, 500);
-setTimeout(fadeInSkill, 700);
+setTimeout( fadeAnimation(".imgWrapper"), 100);
+setTimeout(fadeAnimation(".socialWrapper"), 300);
+setTimeout(fadeAnimation(".bioWrapper"), 500);
+setTimeout(fadeAnimation(".skillWrapper"), 700);
 
-//Fadein för bild och namn
-function fadeInImg() {
-  fadeAnimation(".imgWrapper");
-}
+//Fadeinfunktion
 
 function fadeAnimation(querySelector) {
   let id = null;
   const elem = document.querySelector(querySelector);
-  const opacity = getComputedStyle(elem).opacity;
-  console.log(opacity);
+  const opacityObject = window.getComputedStyle(elem);
 
   let animateOpacity = 0;
   clearInterval(id);
   id = setInterval(frame, 10);
 
   function frame() {
-    if (animateOpacity == 1) {
-      clearInterval(id);
-    } else {
-      animateOpacity = animateOpacity + 0.02;
-      elem.style.opacity = animateOpacity;
-    }
-  }
-}
-//Fadein för socialamediaknappar
-function fadeInSocial() {
-  fadeAnimation(".socialWrapper");
-}
-
-function fadeAnimation(querySelector) {
-  let id = null;
-  const elem = document.querySelector(querySelector);
-  const opacity = getComputedStyle(elem).opacity;
-  console.log(opacity);
-
-  let animateOpacity = 0;
-  clearInterval(id);
-  id = setInterval(frame, 10);
-
-  function frame() {
-    if (animateOpacity == 1) {
+    if (opacityObject.getPropertyValue('opacity') == 1) {
       clearInterval(id);
     } else {
       animateOpacity = animateOpacity + 0.02;
@@ -138,7 +110,7 @@ function skillAnimation(querySelector) {
   console.log(progress);
   let animatedWidth = 0;
   clearInterval(id);
-  id = setInterval(frame, 15);
+  id = setInterval(frame, 10);
 
   function frame() {
     if (animatedWidth == progress) {
