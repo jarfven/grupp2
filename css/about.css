@@ -23,3 +23,7 @@
     .employeeWrapper article h3 {
       margin-bottom: 0;
     }
+
+    .employeeWrapper article a {
+      font-weight: 700;
+    }

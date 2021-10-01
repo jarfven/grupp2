@@ -31,8 +31,8 @@ const contactForm = () => {
       nameVerification.innerHTML = checkbox
       nameRegexTest = true
     } else {
-      nameRegexTest = false
       nameVerification.innerHTML = closeButton
+      nameRegexTest = false
     }
   }
 

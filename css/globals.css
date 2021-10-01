@@ -45,7 +45,7 @@ section div h2 {
 .employeeWrapper,
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
   gap: 4rem;
 }
 
@@ -100,6 +100,6 @@ svg:hover {
 
 .contentWrapper {
   padding: 0 2rem;
-  max-width: 1400px;
+  max-width: 87.5em;
   margin: auto;
 }

@@ -51,7 +51,7 @@ h3 {
 
 .imgWrapper img {
   z-index: -1;
-  max-width: 400px;
+  max-width: 25em;
   border-radius: 50%;
   height: 20rem;
   background-color: rgba(21, 32, 43, 0.3);
@@ -143,13 +143,13 @@ h3 {
   font-family: sans-serif;
   color: #dcc9b6;
   font-weight: 500;
-  max-width: 300px;
+  max-width: 18.75em;
 }
 .langContainer {
   font-family: sans-serif;
   color: #dcc9b6;
   font-weight: 500;
-  max-width: 300px;
+  max-width: 18.75em;
 }
 
 .details {
