@@ -10,6 +10,7 @@ function fadeAnimation(querySelector) {
   let id = null;
   const elem = document.querySelector(querySelector);
   const opacityObject = window.getComputedStyle(elem);
+  let opacityValue = opacityObject.getPropertyValue('opacity') 
 
   let animateOpacity = 0;
   clearInterval(id);
@@ -17,54 +18,6 @@ function fadeAnimation(querySelector) {
 
   function frame() {
     if (opacityObject.getPropertyValue('opacity') == 1) {
-      clearInterval(id);
-    } else {
-      animateOpacity = animateOpacity + 0.02;
-      elem.style.opacity = animateOpacity;
-    }
-  }
-}
-
-//Fadein för bio
-function fadeInBio() {
-  fadeAnimation(".bioWrapper");
-}
-
-function fadeAnimation(querySelector) {
-  let id = null;
-  const elem = document.querySelector(querySelector);
-  const opacity = getComputedStyle(elem).opacity;
-  console.log(opacity);
-
-  let animateOpacity = 0;
-  clearInterval(id);
-  id = setInterval(frame, 10);
-
-  function frame() {
-    if (animateOpacity == 1) {
-      clearInterval(id);
-    } else {
-      animateOpacity = animateOpacity + 0.02;
-      elem.style.opacity = animateOpacity;
-    }
-  }
-}
-//Fadein skills
-function fadeInSkill() {
-  fadeAnimation(".skillWrapper");
-}
-
-function fadeAnimation(querySelector) {
-  let id = null;
-  const elem = document.querySelector(querySelector);
-  const opacity = getComputedStyle(elem).opacity;
-
-  let animateOpacity = 0;
-  clearInterval(id);
-  id = setInterval(frame, 10);
-
-  function frame() {
-    if (animateOpacity == 1) {
       clearInterval(id);
     } else {
       animateOpacity = animateOpacity + 0.02;
@@ -107,7 +60,7 @@ function skillAnimation(querySelector) {
   let id = null;
   const elem = document.getElementById(querySelector);
   const progress = parseInt(elem.dataset.progress);
-  console.log(progress);
+
   let animatedWidth = 0;
   clearInterval(id);
   id = setInterval(frame, 10);
