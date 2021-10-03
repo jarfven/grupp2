@@ -179,16 +179,12 @@ h3 {
 }
 
 @media screen and (max-width: 340px) {
-
   .skillContainer {
   background-color: transparent; 
   box-shadow: none;
   }
-  
   .langContainer {
     background-color: transparent; 
     box-shadow: none;
     }
-  
-
 }
