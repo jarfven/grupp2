@@ -139,7 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
           i = -1;
           break;
         default:
-          console.log("No case");
       }
       i++;
     } else {

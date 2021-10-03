@@ -9,7 +9,7 @@
   }
 
   .aboutWrapper .contentWrapper > img {
-    max-width: 400px;
+    max-width: 25em;
     width: 100%;
     margin: auto;
     border-radius: 15rem;
